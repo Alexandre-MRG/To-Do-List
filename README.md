@@ -33,6 +33,8 @@ $ npm start
 
 Le serveur sera démarré sur le port `3000`
 
+## Accéder à l'application
+
 Ouvrez une page sur votre navigateur avec l'url suivante : [http://localhost:3000](http://localhost:3000/)
 
 ## Auteur :
