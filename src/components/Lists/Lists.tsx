@@ -112,11 +112,11 @@ export default function Lists() {
 
   return (
     <>
-      <div className="container d-inline">
-      <div className="row">
+      <div className="container">
+      <div className="card-columns">
       {listsRef.current.map((list, index) => list.id !== "" ? (
         <div key={list.id} className="">
-          <div className="col-sm d-flex p-3 ">
+          <div className="card">
             <Card
               title={                       
                 <Input 
@@ -133,7 +133,7 @@ export default function Lists() {
                 <Button onClick={() => handleModalClick(list.id, list.name)} icon={<DeleteOutlined />} type="ghost"></Button>
               </Tooltip>
               }
-              style={{ width: 350, display: "grid" }}>
+              style={{display: "grid" }}>
               <div className="container">
                 <div className="">
                   <Collapse>
@@ -183,5 +183,4 @@ export default function Lists() {
       </div>
     </>
   );
-
 }
